@@ -1,0 +1,25 @@
+;=====================================================
+;     File Includes
+;=====================================================
+
+[section/base]
+include-file = $HOME/.config/polybar/colors.conf
+include-file = $HOME/.config/polybar/master.conf
+include-file = $HOME/.config/polybar/modules.conf
+
+
+;=====================================================
+;     Openbox Bars
+;=====================================================
+
+[bar/custombar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+; primary monitor '$(xrandr -q | grep " connected primary" | cut -d ' ' -f1)'
+monitor = HDMI-0
+monitor-fallback = 
+
+modules-left   = menu mpd
+modules-center = date
+modules-right  = audiosink g930battery pulseaudio wifi mem cpu

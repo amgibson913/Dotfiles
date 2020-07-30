@@ -1,0 +1,71 @@
+# Dunst Config - Dark
+# --------------------
+
+[global]
+monitor = 0
+follow = mouse
+geometry = "300x6-20+48"
+indicate_hidden = yes
+shrink = no
+transparency = 20
+separator_height = 2
+padding = 24
+horizontal_padding = 24
+frame_width = 0
+frame_color = "#3b4252"
+separator_color = "#373e4d"
+sort = no
+idle_threshold = 120
+font = Iosevka 10
+line_height = 4
+markup = full
+format = "<b>%s</b>\n%b"
+alignment = left
+vertical_alignment = center
+show_age_threshold = 60
+word_wrap = yes
+ignore_newline = no
+stack_duplicates = false
+hide_duplicate_count = yes
+show_indicators = no
+icon_position = left
+min_icon_size = 0
+max_icon_size = 48
+icon_path = /home/aaron/.icons/Papirus-Dark-Custom/48x48/actions/:/home/aaron/.icons/Papirus-Dark-Custom/48x48/apps/:/home/aaron/.icons/Papirus-Dark-Custom/48x48/devices/:/home/aaron/.icons/Papirus-Dark-Custom/48x48/emblems/:/home/aaron/.icons/Papirus-Dark-Custom/48x48/emotes/:/home/aaron/.icons/Papirus-Dark-Custom/48x48/mimetypes/:/home/aaron/.icons/Papirus-Dark-Custom/48x48/places/:/home/aaron/.icons/Papirus-Dark-Custom/48x48/status/
+sticky_history = no
+history_length = 20
+browser = google-chrome-stable
+always_run_script = true
+title = Dunst
+class = Dunst
+corner_radius = 0
+verbosity = mesg
+
+#orig:
+#mouse_left_click = close_current
+#mouse_middle_click = do_action
+
+mouse_left_click = do_action 
+mouse_middle_click = close_current
+mouse_right_click = close_all
+
+[shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+history = ctrl+`
+context = ctrl+shift+period
+
+[urgency_low]
+timeout = 10
+background = "#3b4252"
+foreground = "#edfefe"
+
+[urgency_normal]
+timeout = 10
+background = "#3b4252"
+foreground = "#edfefe"
+
+[urgency_critical]
+timeout = 0
+background = "#3b4252"
+foreground = "#edfefe"
