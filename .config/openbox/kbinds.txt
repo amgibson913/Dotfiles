@@ -1,0 +1,65 @@
+o C-S-d           	Decorate
+o C-S-u           	Undecorate
+o mod4-Left       	GoToDesktop
+o mod4-Right      	GoToDesktop
+o mod4-Up         	SendToDesktop
+o mod4-Down       	SendToDesktop
+o W-KP_5          	ToggleMaximize
+o W-KP_0          	Iconify
+o W-KP_4          	Unmaximize
+o W-KP_6          	Unmaximize
+o W-KP_8          	Unmaximize
+o W-KP_2          	Unmaximize
+o W-KP_7          	Unmaximize
+o W-KP_9          	Unmaximize
+o W-KP_1          	Unmaximize
+o W-KP_3          	Unmaximize
+o W-KP_Add        	NextWindow
+o A-KP_Subtract   	NextWindow
+o A-Tab           	NextWindow
+o A-S-Tab         	PreviousWindow
+o W-Tab           	NextWindow
+o W-S-Tab         	PreviousWindow
+o A-Escape        	Lower
+x XF86AudioRaiseVolume	volume.sh -i 5
+x XF86AudioLowerVolume	volume.sh -d 5
+x XF86AudioMute   	volume.sh -m
+x XF86AudioStop   	playerctl stop
+x XF86AudioPlay   	playerctl play-pause --player=mopidy,%any
+x C-XF86AudioPlay 	toggle-audio.sh
+x XF86AudioPrev   	changeaudio.sh -p
+x XF86AudioNext   	changeaudio.sh -n
+x W-m             	startmusicplayer.sh
+x XF86Calculator  	gnome-calculator
+x C-Space         	sgtk-menu
+x Print           	scrot 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; xviewer $$(xdg-user-dir PICTURES)/$f'
+x A-Print         	scrot -d 5 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; xviewer $$(xdg-user-dir PICTURES)/$f'
+x W-f             	exo-open --launch FileManager
+x W-t             	termite -t "Termite"
+x W-w             	exo-open --launch WebBrowser
+x C-A-m           	xfce4-settings-manager
+x W-v             	pavucontrol
+x W-s             	skippy-xd
+x W-Return        	termite -t "Termite"
+x W-KP_Enter      	termite -t "Termite"
+x C-Escape        	lockscreen -- scrot
+x W-Escape        	xkill
+x A-F1            	jgmenu_run
+x A-F2            	rofr.sh -r
+o A-F4            	Close
+o A-F5            	Iconify
+o A-F6            	ToggleMaximize
+o A-F8            	ToggleDecorations
+o W-d             	ToggleShowDesktop
+o W-b             	ToggleDecorations
+o A-r             	Resize
+o A-m             	Move
+o S-W-q           	Close
+o W-space         	root-menu
+o A-space         	client-list-menu
+o C-Right         	UnmaximizeFull
+o C-Left          	UnmaximizeFull
+o C-Up            	MaximizeFull
+o C-Down          	UnmaximizeFull
+o C-A-Left        	UnmaximizeFull
+o W-A-Right       	UnmaximizeFull
